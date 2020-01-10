@@ -1,0 +1,3 @@
+[submodule "SNES-Dev"]
+	path = SNES-Dev
+	url = ../SNES-Dev.git
