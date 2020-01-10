@@ -6,6 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/snesos-kernel/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
