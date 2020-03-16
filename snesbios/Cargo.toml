@@ -1,11 +1,12 @@
 [package]
-name = "snesos_kernel"
+name = "snesos_bios"
 version = "0.1.0"
 authors = ["Connor Horman <chorman64@gmail.com>"]
 edition = "2018"
-target = "wc65c816-snesos-kernel"
+target = "wc65c816-snesdev-bios"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-snesdev = {path = "../SNES-Dev/rust", features = ["default","memctl"]}
+snesdev = {path = "../SNES-Dev/rust", features = ["memctl"]}
+

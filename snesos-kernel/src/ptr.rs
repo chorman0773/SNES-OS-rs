@@ -2,6 +2,10 @@
 
 use snesdev::pointer::PackedPtr;
 
+#[repr(transparent)]
+#[derive(Copy,Clone)]
+pub struct UserPtr<T>(pub *T);
+
 impl<T> UserPtr<T>{
     pub fn cast<U>(self) -> UserPtr<U>{
         return UserPtr(self.0.cast::<U>())

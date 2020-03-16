@@ -1,5 +1,6 @@
-use crate::file;
+use crate::{file, proc};
 use crate::ptr::{MutUserPtr, UserPtr};
+use crate::errors::Errno;
 
 
 #[repr(C,u16)]
@@ -10,15 +11,16 @@ pub enum Syscall{
     Exit(i16) = 60
 }
 
-pub unsafe fn handle_syscall(call: Syscall) -> i16{
+pub unsafe fn handle_syscall(call: Syscall) -> Result<u16,Errno>{
     match call{
         Syscall::Exit(code) =>{
+            proc::current().close();
             asm!("CLI"::::"volatile");
             asm!("WAI"::::"volatile");
             core::intrinsics::unreachable()
         }
         _ => {
-            -1
+            Err(Errno::EBADSYS)
         }
     }
 }

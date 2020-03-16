@@ -10,7 +10,22 @@
       <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/snesos-kernel/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_bios/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_bios/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_bios/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_bios/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesdev_bios_startup/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesdev_bios_bootloader/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesdev_bios_bootloader/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesdev_bios_bootloader/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_startup/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_startup/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_startup/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/snesos_startup/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/snesdev_bios_bootloader/target" />
       <excludeFolder url="file://$MODULE_DIR$/snesos-kernel/target" />
+      <excludeFolder url="file://$MODULE_DIR$/snesos_bios/target" />
+      <excludeFolder url="file://$MODULE_DIR$/snesos_startup/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

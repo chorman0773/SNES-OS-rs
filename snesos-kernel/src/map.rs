@@ -4,11 +4,7 @@ use snesdev::volatile::AtomicCell;
 use crate::file::Fd;
 use std::ops::Index;
 
-#[repr(transparent)]
-#[derive(Copy,Clone)]
-pub struct UserPtr<T>(pub *T);
-
-#[repr(C,u8)]
+#[repr(u8)]
 pub enum DevNo{
     Rom = 0,
     WRam = 1,
@@ -23,14 +19,14 @@ pub enum DevNo{
     Memtrap = 15
 }
 
-#[repr(C,u8,packed)]
+#[repr(u8,align(32))]
 pub enum Page{
     PgUnmapped([u8;29],u16) = 0,
     PgReg([u8;29],u16) = 1,
     PgDev{dev: DevNo,properties: u16,dev_pg: u32,mirror_offset: u32,swap_ref: u8,__reserved: [u8;15],checksum: u16} = 2
 }
 
-#[repr(C,align(32))]
+#[repr(C)]
 #[derive(Copy,Clone)]
 struct PageTable{
     page_size: u8,
